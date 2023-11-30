@@ -1,0 +1,23 @@
+.popular-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+}
+.turs{
+    position: relative;
+}
+.main-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    margin-top: 50px;
+    background: #F5F5F5;
+}
+
+@media(max-width:769px){
+    .popular-main{
+        margin-top: 302px;
+    }
+}

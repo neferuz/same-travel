@@ -1,0 +1,313 @@
+.hotelsabout{
+    display: flex;
+    flex-direction: column;
+}
+.hotel-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.hotel-title h1{
+    font-family: 'Hmedium';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 63px;
+    color: #222529;
+}
+.hotel-about-images{
+    width: 100%;
+    height: 632px;
+    display: flex;
+    row-gap: 15px;
+    border-radius: 20px;
+    column-gap: 15px;
+    overflow: hidden;
+}
+.hotelsall-item-text-position span{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: #3B3E44;
+    font-size: 20px;
+    line-height: 18px;
+    font-family: 'Hregular';
+    font-weight: 400;
+}
+.hotelsall-item-text-position span svg{
+    color: #FFD166;
+    width: 20px;
+    height: 20px;
+}
+.hotelsall-item-text-position span:nth-of-type(2) svg{
+    color: #727272;
+    width: 13px;
+    height: 13px;
+}
+.hotel-about-img1{
+    width: 60%;
+    height: 100%;
+}
+.hotel-about-img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hotel-about-img2{
+    width: 100%;
+    height: 32%;
+}
+.hotel-about-img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hotel-about-img-wrapper{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.hotel-about-rating{
+    width: 250px;
+    font-size: 42px;
+    margin: 30px 0px;
+}
+.hotel-about-text-list{
+    padding: 0px;
+    margin-bottom: 35px;
+    list-style: none;
+}
+.hotel-about-text-list h4{
+    font-family: 'Hmedium';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 38px;
+    color: #222529;
+}
+.hotel-about-text-list p{
+    font-family: 'Hregular';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #84878B;
+}
+
+.hotel-about-text-list h3{
+    font-family: 'Hbold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3B3E44;
+}
+.hotel-about-text-list ul{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 25px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.hotel-about-text-list ul li{
+    font-family: 'Hregular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: #4A4E54;
+    column-gap: 35px;
+    display: flex;
+    align-items: center;
+
+}
+.hotel-about-text-list ul li svg{
+    width: 30px;
+    height: 30px;
+}
+.hotel-class-text h2{
+    font-family: 'Hmedium';
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 24px;
+    color: #222529;
+}
+.hotel-class-text p{
+    font-family: 'Hregular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: #84878B;
+    margin-top: 15px;
+}
+.hotel-class-text ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 00;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.hotel-class-text ul li {
+    font-family: 'Hregular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #3B3E44;
+}
+.hotel-class-text ul li svg{
+    width: 20px;
+    height: 20px;
+    color: #03A782;
+}
+.hotel-class{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.hotel-class-wrapper{
+    margin-top: 30px;
+    width: 100%;
+    background: #fff;
+    height: 289px;
+    border: 1px solid #E7ECF3;
+    border-radius: 10px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel-class-img{
+    width: 128px;
+    height: 128px;
+}
+.hotel-class-img img{
+    width: 100%;
+    height: 100%;
+}
+.hotel-class-cost {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.hotel-class-cost span{
+    font-family: 'Hbold';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 32px;
+    color: #141416;
+}
+.hotel-class-cost-link{
+    font-family: 'Hmedium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 10px 15px ;
+    background: #008662;
+    border-radius: 6px;
+}
+
+@media(max-width:1025px){
+    .hotel-about-images{
+        height: 432px;
+    }
+    .hotel-title h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .hotelsall-item-text-position {
+        column-gap: 15px;
+        margin-top: 30px;
+    }
+    .hotel-about-rating{
+        font-size: 25px;
+        line-height: 22px;
+    }
+    .hotel-about-text-list h4 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .hotel-about-text-list p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media(max-width:426px){
+    .flightsall-item-title h2 {
+        font-size: 18px;
+        line-height: 15px;
+    }
+    .hotel-about-images{
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+    }
+    .flightsall-item-img {
+        width: 162px;
+        height: 35.46px;
+    }
+    .flightsall-item-img h5 {
+        top: 11px;
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .flightsall-item-img svg {
+        width: 18px;
+        height: 18px;
+        top: 62%;
+    }
+    .flightsall-item-title h2 {
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .flightsall-item-pos h4 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .flightsall-item-cost h3 {
+        width: 100px;
+        height: 27px;
+        font-size: 16px;
+        line-height: 13px;
+    }
+    .flightsall-item-img span {
+        bottom: -18px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .hotel-about-img1{
+        width: 100%;
+    }
+    .hotel-about-img-wrapper{
+        width: 100%;
+    }
+    .hotel-about-text-list ul{
+        flex-direction: column;
+        align-items: start;
+    }
+    .hotel-class-wrapper{
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        row-gap: 30px;
+    }
+    .flightsall-item-pos {
+        row-gap: 11px;
+    }
+    .flightsall-item-pos p {
+        font-size: 12px;
+        line-height: 10px;
+    }
+}
+
+@media(max-width:321px){
+    .flightsall-item {
+        padding: 10px;
+    }
+}

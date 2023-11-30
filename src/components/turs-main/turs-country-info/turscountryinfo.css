@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-turs-countrys h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 27px;
+    color: #222529;
+}
+
+.features-amenitlies {
+    display: flex;
+    margin-top: 38px;
+
+}
+
+.features-amenitlies ul li {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: none;
+    line-height: 22px;
+
+    color: #333333;
+
+}
+
+.features-amenitlies p {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.features-amenitlies ul li svg {
+    color: #145CE6;
+    align-items: center;
+    margin-right: 8px;
+    vertical-align: baseline;
+}
+
+.more-btn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 9px 25px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 15px;
+
+    align-items: center;
+}
+
+.more-btn a {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 22.4px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    font-weight: 600;
+    font-size: 22.4px;
+    line-height: 29px;
+    color: #212529;
+    text-decoration: none;
+}
+
+.bloks ul {
+    display: flex;
+    gap: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.bloks ul li {
+    color: #2B51E7;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.content-turs-countrys h4 {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 27px;
+    color: #84878B;
+}
+
+.description-content {
+    margin-top: 70px;
+}
+
+.description-content h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #145CE6;
+}
+
+.description-line {
+    margin-top: 16px;
+    width: 81.86px;
+    height: 2px;
+    background: #145CE6;
+    border-radius: 12px;
+}

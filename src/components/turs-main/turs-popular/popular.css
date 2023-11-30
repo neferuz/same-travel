@@ -1,0 +1,156 @@
+@import '../../fonts.css';
+
+.popular{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.popular-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular-text h2{
+    font-family: 'Hbold';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #27282B;
+}
+.popular-text h3{
+    font-family: 'Hregular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3B3E44;
+}
+.popular-text h3 span{
+    color: #316BFF;
+}
+.popular-turs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.popular-turs-item{
+    position: relative;
+    width: 33.3%;
+    height: 408px;
+}
+.popular-turs-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(359.75deg, rgba(30, 30, 30, 0.67) 9.19%, rgba(66, 66, 66, 0) 27%);
+}
+.popular-turs-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.popular-turs-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.popular-turs-item-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.popular-turs-item-star{
+    width: 70px;
+    height: 30px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hmedium';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    column-gap: 5px;
+    color: #27282A;
+}
+.popular-turs-item-star svg path{
+    color: #FFD166;
+}
+.popular-turs-item-title{
+    font-family: 'Hbold';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    color: #fff;z-index: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    justify-content: center;
+}
+.popular-turs-item-title span{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.popular-turs-item-title span svg{
+    width: 20px;
+    height: 20px;
+}
+.popular-turs-item-title span svg path{
+    width: 20px;
+    height: 20px;
+}
+
+@media(max-width:1025px){
+    .popular-text h3{
+        font-size: 16px;
+        line-height: 14px;
+    }
+    .popular-text h2{
+        font-size: 40px;
+        line-height: 38px;
+    }
+}
+@media(max-width:769px){
+    .popular-text h3{
+        font-size: 14px;
+        line-height: 12px;
+    }
+    .popular-text h2{
+        font-size: 34px;
+        line-height: 32px;
+    }
+    .popular-turs-item{
+        width: 50%;
+    }
+}
+@media(max-width:426px){
+    .popular-text h3{
+        font-size: 14px;
+        line-height: 12px;
+    }
+    .popular-text h2{
+        font-size: 30px;
+        line-height: 28px;
+    }
+    .popular-turs-item{
+        width: 100%;
+    }
+    .popular-text{
+        flex-direction: column;
+        row-gap: 5px;
+    }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.nav-langs{
+    width: 20px;
+    height: 20px;
+    z-index: 999;
+    transition: all 500ms;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+.nav-langs svg{
+    width: 20px;
+    height: 20px;
+}
+.btn-lang{
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border: none;
+    transition: all 300ms;
+    cursor: pointer;
+    
+}
+.btn-lang:hover{
+    background: rgba(0, 0, 0, 0.06);
+}
+.btn-lang-active{
+    background: rgba(0, 0, 0, 0.06);
+}
+.nav-langs-wrapper{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    flex-direction: column;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.nav-langs-wrapper-active{
+    display: flex;
+}
+
+.navbarr{
+    height: 10%;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logo{
+    width: 86.7px;
+    height: 51px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav-list{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.nav-cost{
+    border: none;
+    background: transparent;
+    color: #84878B;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 700;
+  /* border-bottom: 0px; */
+}
+.nav-cost .xyz {
+    background: transparent;
+}
+.user-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.navbar-link-wrapper{
+    text-decoration: none;
+    color: #000;
+}
+.user-logo-img{
+    width: 32px;
+    margin-right: 10px;
+    height: 32px;
+}
+.user-logo-img img{
+    width: 100%;
+    height: 100%;
+}
+.user-logo h3{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+}
+.user-logo svg path{
+    width: 20px;
+    height: 20px;
+}
+.user-logo svg{
+    width: 20px;
+    height: 20px;
+}
+

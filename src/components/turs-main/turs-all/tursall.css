@@ -1,0 +1,134 @@
+@import '../../fonts.css';
+
+
+.tursall{
+    margin-top: 130px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.tursall-wrapper{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.tursall-item{
+    width: 270px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+}
+.tursall-item-img{
+    width: 100%;
+    height: 234px;
+    position: relative;
+}
+.tursall-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.tursall-item-rate{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: start;
+}
+.tursall-item-rate span{
+    min-width: 70px;
+    height: 30px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hmedium';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    column-gap: 5px;
+    color: #27282A;
+}
+.tursall-item-rate span svg path{
+    color: #FFD166;
+}
+
+
+
+.tursall-item-btn{
+    background: #316BFF;
+    width: 100%;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    font-family: 'Hmedium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    color: #fff;
+}
+.tursall-item-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin-top: 12px;
+}
+.tursall-item-text h3{
+    font-size: 25px;
+    line-height: 25px;
+    font-family: "Hbold";
+    font-weight: 700;
+    color: #23262F;
+    margin:0 20px;
+}
+.tursall-item-text span{
+    font-family: 'Hregular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin:0 20px;
+    color: #84878B;
+}
+.tursall-item-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 0;
+    margin:0 20px;
+    list-style: none;
+    row-gap: 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.tursall-item-list li{
+    font-family: 'Hregular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #84878B;
+    column-gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:426px){
+    .tursall-wrapper{
+        justify-content: center;
+    }
+    .tursall-item{
+        width: 330px;
+    }
+}

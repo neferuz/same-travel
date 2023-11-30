@@ -1,0 +1,64 @@
+from zeep import Client
+
+wsdl_url = "http://avia.preprod.net.mlsd.ru:11000/Avia.svc?singleWsdl"
+
+client = Client(wsdl_url)
+
+def perform_request(request_name, request_body):
+    try:
+        response = client.service[request_name](request_body)
+        print(f"Request for {request_name}:")
+        print(client.last_sent)
+        print(f"Response for {request_name}:")
+        print(client.last_received)
+        return response
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
+
+user_id = '14009'
+auth_token = '69FA808F98EC74D068E83D75AE6E1DB5'
+source_preference = ['-15419', '-15424']
+nemo_login = 'api_test_samogroup'
+nemo_password = '1234567'
+
+def create_booking(passenger_count):
+    request_body = {
+        'Request': {
+            'Requisites': {
+                'Login': nemo_login,
+                'Password': nemo_password,
+            },
+            'UserID': user_id,
+            'RequestBody': {
+                'RequestedFlightInfo': {
+                    'Direct': 0,
+                    'AroundDates': 0,
+                    'ODPairs': {
+                        'ODPair': [
+                            {
+                                'DepatureDateTime': '2017-09-22T00:00:00',
+                                'DepaturePoint': {
+                                    'Code': 'MOW',
+                                    'IsCity': 1,
+                                },
+                                'ArrivalPoint': {
+                                    'Code': 'LED',
+                                    'IsCity': 1,
+                                },
+                            },
+                        ],
+                    },
+                },
+                'Passengers': {
+                    'Passenger': [{'Type': 'ADT', 'Count': passenger_count}],
+                },
+                'Restrictions': {
+                    'SourcePreference': {
+                        'Source': source_preference,
+                    },
+                },
+            },
+        },
+    }
+    return perform_request('Search_1_2', request_body)

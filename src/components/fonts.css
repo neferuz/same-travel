@@ -1,0 +1,12 @@
+@font-face{
+    src: url(../assets/fonts/TTHoves-Bold.ttf);
+    font-family: 'Hbold';
+}
+@font-face{
+    src: url(../assets/fonts/TTHoves-Medium.ttf);
+    font-family: 'Hmedium';
+}
+@font-face{
+    src: url(../assets/fonts/TTHoves-Regular.ttf);
+    font-family: 'Hregular';
+}
